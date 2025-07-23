@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Farhan An Nafi - Portfolio</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Pacifico&display=swap" rel="stylesheet" />
+
+<style>
+  body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(135deg, #e53935 0%, #1e88e5 50%, #43a047 100%);
+    color: white;
+    scroll-behavior: smooth;
+  }
+  header {
+    background: rgba(0,0,0,0.7);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.7);
+  }
+  header h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 2rem;
+    margin: 0;
+  }
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+  }
+  nav a:hover {
+    color: #ffeb3b;
+  }
+  section {
+    padding: 120px 40px 80px;
+    max-width: 900px;
+    margin: auto;
+  }
+  h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  p {
+    font-size: 1.3rem;
+    line-height: 1.6;
+  }
+  .buttons {
+    margin-top: 30px;
+  }
+  .buttons button {
+    background-color: #ff1744;
+    border: none;
+    padding: 15px 30px;
+    margin-right: 20px;
+    font-size: 1.2rem;
+    color: white;
+    border-radius: 35px;
+    cursor: pointer;
+    font-weight: 700;
+    transition: background-color 0.3s ease;
+  }
+  .buttons button:hover {
+    background-color: #d50000;
+  }
+
+  /* Responsive */
+  @media (max-width: 600px) {
+    header {
+      padding: 15px 20px;
+      flex-direction: column;
+      gap: 10px;
+    }
+    nav a {
+      margin-left: 0;
+      margin-right: 15px;
+    }
+    section {
+      padding: 100px 20px 60px;
+    }
+    h2 {
+      font-size: 2.2rem;
+    }
+  }
+</style>
+
+</head>
+<body>
+
+<header>
+  <h1>Farhan An Nafi</h1>
+  <nav>
+    <a href="#about">About Me</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section id="about">
+  <h2>About Me</h2>
+  <p>Hi! I’m Farhan An Nafi, a passionate developer who loves creating clean and professional websites with cool designs. Welcome to my personal portfolio!</p>
+  <div class="buttons">
+    <button onclick="document.getElementById('projects').scrollIntoView({behavior:'smooth'})">See My Projects</button>
+    <button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Contact Me</button>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <p>Here are some of the projects I’ve worked on recently:</p>
+  <ul>
+    <li><strong>Project One:</strong> Responsive Website Design</li>
+    <li><strong>Project Two:</strong> E-commerce Platform</li>
+    <li><strong>Project Three:</strong> Portfolio Website</li>
+  </ul>
+  <div class="buttons">
+    <button onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">Back to About</button>
+    <button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Contact Me</button>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>You can reach me via email: <a href="mailto:farhan@example.com" style="color:#ffd700;">farhan@example.com</a> or follow me on social media.</p>
+  <div class="buttons">
+    <button onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">Back to About</button>
+    <button onclick="document.getElementById('projects').scrollIntoView({behavior:'smooth'})">See Projects</button>
+  </div>
+</section>
+
+</body>
+</html>
